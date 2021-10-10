@@ -5,31 +5,94 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sayohat-blog</title>
-
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@400;700&display=swap"
+  rel="stylesheet">
+  
   <!-- Stylesheets -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   
+  
   <main class="main-content">
-  <div class="global-wrapper">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-content">
-        <h1 class="hero-heading">Sayohat haqidagi eng qiziq bloglarni kuzatib boring.</h1>   
-        <a class="hero-link" href="#">
-          <span class="hero-link-inner">
-            <span class="hero-link-text">Top bloglar</span>
-          </span>
-        </a>               
+    <div class="global-wrapper">
+      
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-heading">Sayohat haqidagi eng qiziq bloglarni kuzatib boring.</h1>   
+          <a class="hero-link" href="#">
+            <span class="hero-link-inner">
+              <span class="hero-link-text">Top bloglar</span>
+            </span>
+          </a>               
+        </div>
       </div>
+      
+      
+      <!-- LATEST-VIDEOS -->
+      <section class="latest-videos">
+        <h2 class="latest-videos-heading">Eng so’nggi videolar</h2>
+        <hr class="latest-videos-divider">
+        <ul class="latest-videos-list">
+          <!-- ITEM -->
+          <li class="latest-videos-item">
+            <div class="item-latest-videos">
+              <img class="item-latest-videos-img" src="img/wooden-house.jpg" alt="O’rmonda uchburchaksimon uy qurdik" width="160" height="90" srcset="img/wooden-house.jpg 1x, img/wooden-house@2x.jpg 2x">
+              <div class="item-latest-videos-info">
+                <h3 class="item-latest-videos-heading">
+                  <a href="#" class="item-latest-videos-link">O’rmonda uchburchaksimon uy qurdik</a>
+                </h3>
+                <div class="item-latest-videos-meta">
+                  <time class="item-latest-videos-published-date" datetime="2021-09-23">1 hafta oldin</time>
+                  <div class="item-latest-videos-views">873 ming</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- ITEM -->
+          <li class="latest-videos-item">
+            <div class="item-latest-videos">
+              <img class="item-latest-videos-img" src="img/siberian-landscape.jpg" alt="Sibirliklarning qoldirib ketilgan uychalari" width="160"
+              height="90" srcset="img/siberian-landscape.jpg 1x, img/siberian-landscape@2x.jpg 2x">
+              <div class="item-latest-videos-info">
+                <h3 class="item-latest-videos-heading">
+                  <a href="#" class="item-latest-videos-link">Sibirliklarning qoldirib ketilgan uychalari</a>
+                </h3>
+                <div class="item-latest-videos-meta">
+                  <time class="item-latest-videos-published-date" datetime="2021-09-09">3 hafta oldin</time>
+                  <div class="item-latest-videos-views">819 ming</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- ITEM -->
+          <li class="latest-videos-item">
+            <div class="item-latest-videos">
+              <img class="item-latest-videos-img" src="img/travel-with-a-dog-in-the-woods.jpg" alt="Yer-uyida mallarang kuchugim bilan tunab qoldik" width="160"
+              height="90" srcset="img/travel-with-a-dog-in-the-woods.jpg 1x, img/travel-with-a-dog-in-the-woods@2x.jpg 2x">
+              <div class="item-latest-videos-info">
+                <h3 class="item-latest-videos-heading">
+                  <a href="#" class="item-latest-videos-link">Yer-uyida mallarang kuchugim bilan tunab qoldik</a>
+                </h3>
+                <div class="item-latest-videos-meta">
+                  <time class="item-latest-videos-published-date" datetime="2021-08-26">1 oy oldin</time>
+                  <div class="item-latest-videos-views">3.9 million</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <button class="load-more-button" type="button">Yana yuklash</button>
+      </section>
     </div>
-
-  </div>
   </main>
-
-<script src="js/main.js"></script>
+  
+  <script src="js/main.js"></script>
 </body>
 </html>
