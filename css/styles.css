@@ -207,36 +207,31 @@ main {
   font-size: 14px;
   line-height: normal;
 }
-.item-latest-videos-published-date {
-  display: flex; 
-  align-items: center;
-  margin-right: 24px;
-}
-.item-latest-videos-published-date:before {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-  background-image: url(../img/icon-clock.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  content: "";
-}
 
-.item-latest-videos-views {
+.item-latest-videos-meta-item {
   display: flex;
   align-items: center;
 }
 
-.item-latest-videos-views:before {
+.item-latest-videos-meta-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.item-latest-videos-meta-item:before {
   width: 16px;
   height: 16px;
   margin-right: 4px;
-  background-image: url(../img/icon-visibility.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
   content: "";
+}
+
+.item-latest-videos-meta-item-published-date:before {
+  background-image: url(../img/icon-clock.svg);
+}
+
+.item-latest-videos-meta-item-views:before {
+  background-image: url(../img/icon-visibility.svg);
 }
 
 /* LOAD-MORE-BUTTON */
@@ -274,4 +269,59 @@ only screen and (                min-resolution: 2dppx) {
   .hero{
     background-image: url(../img/travel-bg@2x.jpg);
   }
+}
+
+@media only screen and (max-width:700px) {
+  .global-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    max-width: 100%;
+    padding: 20px 20px 40px;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .latest-videos {
+    max-width: 100%;
+    padding: 20px;
+  }
+  
+  .item-latest-videos {
+    max-width: 100%;
+    padding: 20px;
+  }
+  .item-latest-videos-img {
+    width: 130px;
+    height: auto;
+  }
+  .item-latest-videos-info {
+    padding: 8px;
+  }
+  .latest-videos-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-latest-videos-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .item-latest-videos-meta-item-published-date {
+    margin-bottom: 5px;
+  }
+  
 }
